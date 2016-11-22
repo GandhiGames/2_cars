@@ -77,7 +77,7 @@ public class UIManager : MonoBehaviour {
                 Input.mousePosition,
                 Camera.main))
         {
-            print("Clicked Outside");
+           // print("Clicked Outside");
 
             outsidePanel.SetActive(false);
             outsidePanel.transform.parent.gameObject.SetActive(false);

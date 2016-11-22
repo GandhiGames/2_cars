@@ -18,17 +18,17 @@ public class GamePlayState : _StatesBase {
 
         gamePlayDuration = Time.time;
 
-        Debug.Log ("<color=green>Gameplay State</color> OnActive");	
+       // Debug.Log ("<color=green>Gameplay State</color> OnActive");	
 	}
 	public override void OnDeactivate ()
 	{
         Managers.Game.stats.timeSpent += Time.time - gamePlayDuration;
-		Debug.Log ("<color=red>Gameplay State</color> OnDeactivate");
+		//Debug.Log ("<color=red>Gameplay State</color> OnDeactivate");
 	}
 
 	public override void OnUpdate ()
 	{
-		Debug.Log ("<color=yellow>Gameplay State</color> OnUpdate");
+		//Debug.Log ("<color=yellow>Gameplay State</color> OnUpdate");
 	}
 	#endregion
 
